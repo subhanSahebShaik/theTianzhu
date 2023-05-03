@@ -1,0 +1,9 @@
+web:
+  - start: gunicorn thesindus.wsgi:application
+    env:
+      DJANGO_SETTINGS_MODULE: thesindus.settings
+    port: 8000
+  - name: "Static files"
+    env:
+      SERVE_STATIC_FILES: true
+    path: /static/
