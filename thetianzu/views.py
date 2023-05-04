@@ -12,13 +12,11 @@ def home(request):
         l = i.lon
         folium.Marker(
             location=[v, l],
-            popup='<a href="http://127.0.0.1:8000/state/'+str(i.id)+'" target="blank">'+str(i.statnam)+'</a>', icon=folium.Icon(color='green', prefix='glyphicon', icon='off'), max_bound=True).add_to(m)
+            popup='<a href="https://tianzhu.onrender.com/state/'+str(i.id)+'" target="blank">'+str(i.statnam)+'</a>', icon=folium.Icon(color='green', prefix='glyphicon', icon='off'), max_bound=True).add_to(m)
         # Get HTML Representation of Map Object
     m = m._repr_html_()
     context = {
         'm': m,
-
-
     }
     return render(request, 'thetianzu/home.html', context)
 
