@@ -40,7 +40,6 @@
         }
 
         .slideshow-container {
-
             margin: auto;
             position: relative;
             align-items: center;
@@ -104,9 +103,9 @@
 
 <body>
     <a href="{% url 'home' %}" id="header" class="head">
-            <img src="{% static 'image/logo1.jpeg' %}" style="height: 70px;width: 70px;border-radius: 25%;">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <p style="font-family: 'Amita';font-size: 44px;margin: 0;" class="title">The Tianzu</p>
+        <img src="{% static 'image/logo1.jpeg' %}" style="height: 70px;width: 70px;border-radius: 25%;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p style="font-family: 'Amita';font-size: 44px;margin: 0;" class="title">The Tianzu</p>
     </a>
 
     <section>
@@ -116,13 +115,13 @@
             style="margin: 0%; align-items: center;width: 95vw;display: flex;align-items: center;justify-content: center;">
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="{% static '/image/icon/' %}{{record.id}}1.jpg" style="height: 400px;width: 800px;">
+                    <img src="{% static '/image/icon/' %}{{record.id}}1.jpg">
                 </div>
                 <div class="mySlides fade">
-                    <img src="{% static '/image/icon/' %}{{record.id}}3.jpg" style="height: 400px;width: 800px;">
+                    <img src="{% static '/image/icon/' %}{{record.id}}3.jpg">
                 </div>
                 <div class="mySlides fade">
-                    <img src="{% static '/image/icon/' %}{{record.id}}6.jpg" style="height: 400px;width: 800px;">
+                    <img src="{% static '/image/icon/' %}{{record.id}}6.jpg">
                 </div>
             </div>
         </div>
