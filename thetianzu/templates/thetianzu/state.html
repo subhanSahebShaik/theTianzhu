@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A small blog on {{record.statnam}}"/>
     <title>Indian Culture</title>
     <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet'>
@@ -95,7 +96,7 @@
 
         #image img {
             height: 90%;
-            width: auto;
+            max-width: 95vw;
         }
     </style>
 
@@ -115,13 +116,13 @@
             style="margin: 0%; align-items: center;width: 95vw;display: flex;align-items: center;justify-content: center;">
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="{% static '/image/icon/' %}{{record.id}}1.jpg">
+                    <img src="{% static '/image/icon/' %}{{record.id}}1.jpg" style="max-width:95vw;">
                 </div>
                 <div class="mySlides fade">
-                    <img src="{% static '/image/icon/' %}{{record.id}}3.jpg">
+                    <img src="{% static '/image/icon/' %}{{record.id}}3.jpg" style="max-width:95vw;">
                 </div>
                 <div class="mySlides fade">
-                    <img src="{% static '/image/icon/' %}{{record.id}}6.jpg">
+                    <img src="{% static '/image/icon/' %}{{record.id}}6.jpg" style="max-width:95vw;">
                 </div>
             </div>
         </div>
