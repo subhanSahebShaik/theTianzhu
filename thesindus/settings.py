@@ -40,7 +40,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'thetianzu',
+    'analytical',
 ]
+
+ANALYTICAL_BACKENDS = (
+    'analytical.backends.google_analytics.GoogleAnalyticsBackend',
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -125,3 +130,5 @@ STATIC_URL = 'https://cdn.jsdelivr.net/gh/subhanSahebShaik/theTianzhu@master/sta
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+GOOGLE_ANALYTICS_PROPERTY_ID = "G-VVK648PLBJ"
